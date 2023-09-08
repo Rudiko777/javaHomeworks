@@ -11,14 +11,15 @@ public class Product{
         this.cost = cost;
     }
 
+
     public Categories getCategor() {
         return categor;
     }
 
     @Override
     public String toString() {
-        return "Товар {  Название = " + name +
+        return "Товар {Название = " + name +
                 ", Цена = " + cost +
-                "р. }";
+                "р.}";
     }
 }

@@ -5,27 +5,17 @@ import java.util.ArrayList;
 public enum Categories {
     Clothes, Chemicals, Electronics, Food;
 
-    private ArrayList<Product> productIn;
+    private ArrayList<Product> productIn = new ArrayList<Product>();
 
-    Categories(ArrayList<Product> product){
-        for(Product el: product){
-            switch (el.getCategor()){
-                case Clothes:
-                    productIn.add(el); break;
-
-                case Chemicals:
-                    productIn.add(el); break;
-
-                case Electronics:
-                    productIn.add(el); break;
-
-                case Food:
-                    productIn.add(el); break;
-            }
-        }
+    public void addProductInCategor(Product el){
+       productIn.add(el);
     }
 
-    Categories(){}
+    public void removeProd(int ind, Basket basket){
+        basket.getBasket().add(productIn.get(ind - 1));
+        productIn.remove(ind-1);
+    }
+
 
     public ArrayList<Product> getAllProductInCat(){
         return productIn;
