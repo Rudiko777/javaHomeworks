@@ -1,9 +1,9 @@
 package box1;
 
-public class Share {
+public class Shape {
     private String type;
 
-    public Share(String type) {
+    public Shape(String type) {
         this.type = type;
     }
 

@@ -5,26 +5,27 @@ public class Phone {
     private String model;
     private int weight;
 
-    public Phone(String number, String model, int weight) {
-        this.number = number;
-        this.model = model;
-        this.weight = weight;
-    }
+
 
     public Phone(String number, String model) {
         this.number = number;
         this.model = model;
     }
 
+    public Phone(String number, String model, int weight) {
+        this(number, model);
+        this.weight = weight;
+    }
+
     public Phone() {
     }
 
-    public String recCall(String name){
-        return "Звонит {" + name + "}";
+    public void receiveCall(String name){
+        System.out.println("Звонит {" + name + "}");
     }
 
-    public String recCall(String name, String number){
-        return "Звонит {" + name + ", " + number + "}";
+    public void receiveCall(String name, String number){
+        System.out.println("Звонит {" + name + ", " + number + "}");
     }
 
     public void sendMess(String[] arg){
@@ -37,5 +38,12 @@ public class Phone {
       return number;
     }
 
-
+    @Override
+    public String toString(){
+        return "Характеристика данного телефона\n" +
+                "--------------------------------\n" +
+                "номер телефона - " + number + "\n" +
+                "модель телефона - " + model + "\n" +
+                "вес телефона - " + weight;
+    }
 }

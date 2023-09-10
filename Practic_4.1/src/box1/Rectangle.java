@@ -1,11 +1,11 @@
 package box1;
 
-public class Rectangle extends Share{
+public class Rectangle extends Shape {
     private double a;
     private double b;
 
     public Rectangle(String type, int a, int b) {
-        super("Прямоугольник");
+        super(type);
         this.a = a;
         this.b = b;
     }
@@ -16,6 +16,11 @@ public class Rectangle extends Share{
 
     public double getS(){
         return a*b;
+    }
+
+    @Override
+    public String getType(){
+        return this.getType();
     }
 
     @Override

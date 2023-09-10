@@ -1,10 +1,10 @@
 package box1;
 
-public class Square extends Share{
+public class Square extends Shape {
     private double a;
 
     public Square(String type, int a) {
-        super("Квадрат");
+        super(type);
         this.a = a;
     }
 
@@ -14,6 +14,11 @@ public class Square extends Share{
 
     public double getS(){
         return Math.pow(a,2);
+    }
+
+    @Override
+    public String getType(){
+        return this.getType();
     }
 
     @Override

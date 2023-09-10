@@ -1,10 +1,10 @@
 package box1;
 
-public class Circle extends Share{
+public class Circle extends Shape {
     private double r;
 
     public Circle(int r, String type) {
-        super("Окружность");
+        super(type);
         this.r = r;
     }
 
@@ -14,6 +14,11 @@ public class Circle extends Share{
 
     public double getS(){
         return Math.PI*(Math.pow(r,2));
+    }
+
+    @Override
+    public String getType(){
+        return this.getType();
     }
 
     @Override
