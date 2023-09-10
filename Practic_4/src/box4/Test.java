@@ -8,8 +8,8 @@ public class Test {
         Processor processor1 = new Processor("i5");
         Processor processor2 = new Processor("i7");
 
-        Memory memory1 = new Memory("HyperX", 16);
-        Memory memory2 = new Memory("Asus", 8);
+        Memory memory1 = new Memory("ddr4", 16);
+        Memory memory2 = new Memory("ddr5", 8);
 
         System.out.println(new Computer(Name.Honor, memory1, monitor2, processor1));
         System.out.println(new Computer(Name.Lenovo, memory2, monitor1, processor2));

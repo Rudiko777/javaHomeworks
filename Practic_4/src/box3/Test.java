@@ -11,7 +11,7 @@ public class Test {
 
         Product[] list = new Product[]{
                 new Product(Categories.Clothes, "Штаны" , 400),
-                new Product(Categories.Chemicals, "Хуета" , 200),
+                new Product(Categories.Chemicals, "h2so4" , 200),
                 new Product(Categories.Electronics, "Пылесос" , 100),
                 new Product(Categories.Food, "Яблоко" , 50)};
 
